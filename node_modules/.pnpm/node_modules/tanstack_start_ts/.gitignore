@@ -1,0 +1,17 @@
+# Dependências
+node_modules
+dist
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+venv/
+.venv/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

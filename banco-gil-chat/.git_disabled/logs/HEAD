@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 61dafa1e66b2f9d9d1c8aed249f3d6f8f1edd8e1 Matheusnev23 <matheusnevestura@gmail.com> 1786137641 -0300	clone: from https://github.com/matheusnev23/banco-gil-chat
+61dafa1e66b2f9d9d1c8aed249f3d6f8f1edd8e1 b6f5dbcd8f7e53f44afebac4c1412e8f7418c0a0 Matheusnev23 <matheusnevestura@gmail.com> 1786576333 -0300	commit: feat: integra backend FastAPI ao frontend e documenta decisões técnicas
+b6f5dbcd8f7e53f44afebac4c1412e8f7418c0a0 20d521386b427a7a59515f7baad202c3d5dd24ef Matheusnev23 <matheusnevestura@gmail.com> 1786577961 -0300	commit: docs: adiciona justificativas de arquitetura (Python, FastAPI, OpenRouter vs LangChain/LangGraph)
+20d521386b427a7a59515f7baad202c3d5dd24ef de9c0a70c445888afed02a12bb8ccb2a593abb66 Matheusnev23 <matheusnevestura@gmail.com> 1786584544 -0300	commit: docs: atualiza nome da pasta base para Banco Agentes

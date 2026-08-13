@@ -1,0 +1,13 @@
+{
+  "name": "banco-agil",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"pnpm dev:backend\" \"pnpm dev:frontend\"",
+    "dev:backend": "cd banco-gil-chat/backend && python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "dev:frontend": "cd banco-gil-chat && pnpm dev",
+    "install:all": "pnpm install && cd banco-gil-chat/backend && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
