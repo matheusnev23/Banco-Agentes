@@ -41,7 +41,7 @@ export function Sidebar({
 
       <div className="mt-7 min-h-0 flex-1 overflow-y-auto px-4 pb-4">
         <p className="px-2 pb-2 text-[11px] font-semibold tracking-[0.14em] text-sidebar-foreground/45 uppercase">
-          Histórico
+          Histórico (Dados Estáticos)
         </p>
         <ul className="space-y-1">
           {MOCK_CONVERSATION_HISTORY.map((item) => {
