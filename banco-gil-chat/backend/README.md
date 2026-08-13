@@ -2,7 +2,7 @@
 
 API do assistente virtual do **Banco Ágil**. Este backend fornece os endpoints que o frontend `banco-gil-chat` consome.
 
-## Estrutura
+## 📁 Estrutura
 
 ```
 backend/
@@ -21,7 +21,7 @@ backend/
 └── .env.example             # Exemplo de configuração
 ```
 
-## Como executar
+## 🚀 Como executar
 
 ### 1. Criar ambiente virtual (recomendado)
 
@@ -65,7 +65,7 @@ O servidor estará disponível em:
 - **Docs (Swagger)**: http://localhost:8000/docs
 - **Health check**: http://localhost:8000/health
 
-## Endpoints
+## 🔌 Endpoints
 
 | Método | Rota | Descrição |
 |--------|------|-----------|
@@ -79,7 +79,7 @@ O servidor estará disponível em:
 | GET | `/api/exchange/rate?base=USD&quote=BRL` | Consulta cotação de moedas |
 | GET | `/health` | Verificação de saúde da API |
 
-## Integração com o Frontend
+## 🔌 Integração com o Frontend
 
 O frontend `banco-gil-chat` já está preparado para consumir esta API:
 
@@ -92,7 +92,7 @@ O frontend `banco-gil-chat` já está preparado para consumir esta API:
 
 3. Os schemas da API espelham exatamente os tipos em `src/types/index.ts`, então não é necessário mudar componentes.
 
-## Autenticação (agente de triagem)
+## 🔐 Autenticação (agente de triagem)
 
 O agente de triagem autentica o cliente usando **CPF + data de nascimento**.
 Os clientes cadastrados ficam em `data/clientes.csv`, com o formato:
@@ -116,7 +116,7 @@ Após a autenticação, o **agente de triagem** direciona o cliente para o agent
 - `credit_interview` → atualização de score / entrevista financeira
 - `exchange` → cotação de moedas
 
-## Pré-prompt do agente de AI
+## 🧠 Pré-prompt do agente de AI
 
 O pré-prompt do agente de triagem fica em `backend/prompts/triage_prompt.txt`.
 Ele é **100% editável** — edite o arquivo para ajustar o comportamento da IA.
@@ -134,7 +134,7 @@ Suporta **variáveis dinâmicas** substituídas automaticamente a cada conversa:
 O serviço `app/services/prompt_service.py` carrega o template, substitui as variáveis
 e injeta como system prompt quando `OPENAI_API_KEY` está configurada.
 
-## Notas
+## 📝 Notas
 
 - As **sessões são armazenadas em memória** (`app/models/session.py`), incluindo o histórico da conversa. Quando houver banco de dados, basta trocar essa implementação.
 - A **base de clientes** (`data/clientes.csv`) é lida pelo serviço `app/services/client_db.py` e inclui os limites de crédito de cada cliente.
